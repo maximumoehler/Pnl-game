@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel P&L Game</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Verlinkt zu einer CSS-Datei für Design -->
+</head>
+<body>
+    <header>
+        <h1>Hotel P&L Simulation</h1>
+    </header>
+
+    <main>
+        <section id="decision-form">
+            <h2>Quarterly Decision</h2>
+            <label for="rate">Set Room Rate:</label>
+            <input type="number" id="rate" name="rate" min="50" max="500" step="10" value="150">
+
+            <label for="marketing">Marketing Budget:</label>
+            <input type="range" id="marketing" name="marketing" min="0" max="100" value="50">
+            <span id="marketing-value">50</span> %
+
+            <button onclick="submitDecision()">Submit Decisions</button>
+        </section>
+
+        <section id="results">
+            <h2>Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Quarter</th>
+                        <th>Revenue</th>
+                        <th>Guest Satisfaction</th>
+                        <th>GOP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ergebnisse werden hier angezeigt -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Developed by You</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Verlinkt zu einer JavaScript-Datei für die Logik -->
+</body>
+</html>
